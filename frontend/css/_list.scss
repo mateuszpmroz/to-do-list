@@ -1,0 +1,101 @@
+.list {
+  font-family: 'Lato';
+  font-weight: 600;
+  &__head {
+    background-color: $blue;
+    color: white;
+    font-size: 15px;
+  }
+  &__titles {
+    display: inline-block;
+    padding: 6px 6px;
+    border-left: $aqua 1px solid;
+    margin-left: 4px;
+    color: $light-blue;
+  }
+  &__title {
+    display: inline-block;
+    margin-left: 26px;
+    border-left: $aqua 1px solid;
+
+  }
+  &__body {
+    background-color: #fff;
+    color: $blue;
+    border-width: 0px 1px 1px 1px;
+    border-color: #e6ebed;
+    border-style: solid;
+    font-size: 13px;
+  }
+  &__checkbox {
+    float: left;
+    padding: 6px 6px;
+    margin-right: 4px;
+    border-right: $pink 1px solid;
+  }
+  &__checkbox-input {
+    background-color: #f6f8f9;
+    border-color: $light-blue;
+    &:checked {
+      color: #adc153;
+    }
+  }
+
+  &__text {
+    padding: 6px 6px;
+    border-left: $pink 1px solid;
+    float: left;
+    width: 75%;
+    word-break: break-all;
+  }
+  &__trash-icon {
+    padding: 6px 6px;
+    margin-right: 4px;
+    float: right;
+    vertical-align: middle;
+    & img:hover {
+      cursor: pointer;
+    }
+  }
+  &__plus-icon {
+    float: left;
+    padding: 6px 6.5px;
+    color: silver;
+    margin-right: 4px;
+    border-right: $pink 1px solid;
+    &:hover {
+      cursor: pointer;
+      color: $blue;
+    }
+  }
+  &__text-input {
+    border: none transparent;
+    outline: none;
+    width: 100%;
+    height: 12px;
+  }
+  &__done {
+    & span {
+      color: #9eb2c0;
+      text-decoration: line-through;
+      & img {
+        opacity: 0.4;
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  li {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    border-bottom: silver 1px solid;
+  }
+  li * {
+    font-size: 12px;
+  }
+
+}
