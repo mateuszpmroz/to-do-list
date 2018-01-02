@@ -23,7 +23,7 @@ class DatabaseInstance
      */
     private function __construct()
     {
-        $this->dbh = new PDO("mysql:dbname=todolist;host=localhost", "root", "");
+        $this->dbh = new PDO('sqlite:test.db');
     }
 
     /**
