@@ -20,8 +20,8 @@ $list = $ToDo->read();
 <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-12">
     <div class="list">
         <div class="list__head">
-            <span class="list__title">
-                <span class="list__titles">
+            <span class="list__title-dbl-border">
+                <span class="list__title">
                           ToDo List
                 </span>
                 </span>

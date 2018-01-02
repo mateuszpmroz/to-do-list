@@ -8,13 +8,13 @@ body {
     background-color: #2e3641;
     color: white;
     font-size: 15px; }
-  .list__titles {
+  .list__title {
     display: inline-block;
     padding: 6px 6px;
     border-left: #454f5c 1px solid;
     margin-left: 4px;
     color: #dae4eb; }
-  .list__title {
+  .list__title-dbl-border {
     display: inline-block;
     margin-left: 26px;
     border-left: #454f5c 1px solid; }
