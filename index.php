@@ -1,30 +1,7 @@
 <?php
 require 'backend/ToDo.php';
 $ToDo = new ToDo();
-$this->instance->exec ("CREATE TABLE IF NOT EXIST 'todolist' (
-
-  `id` int(11) NOT NULL PRIMARY KEY auto_increment,
-
-  `text` varchar(40) COLLATE utf8_polish_ci NOT NULL,
-
-  `status` tinyint(1) NOT NULL DEFAULT '0'
-
-) ");
-$this->instance->exec ("INSERT INTO `todolist` (`id`, `text`, `status`) VALUES
-
-(0, 'Make a new post about...', 1),
-
-(1, 'Proof read the new post.', 0),
-
-(2, 'Publish new post.', 0),
-
-(3, 'Make research for tomorrows post.', 0),
-
-(4, 'Take the day off.', 1),
-
-(5, 'Go to bed.', 1)
-
-");
+$ToDo->check();
 $list = $ToDo->read();
 ?>
 <html>

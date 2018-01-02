@@ -64,4 +64,22 @@ class ToDo
         $statement->execute();
     }
 
+    /**
+     * Checking if table already exist and insert some data
+     */
+    public function check()
+    {
+        $query = $this->instance->query("SELECT 1 FROM todolist LIMIT 1");
+        if (!$query) {
+            $statement = $this->instance->prepare("CREATE TABLE IF NOT EXISTS todolist 
+(id int(11) auto_increment NOT NULL PRIMARY KEY,text varchar(40) COLLATE utf8_polish_ci NOT NULL,
+status tinyint(1) NOT NULL DEFAULT '0') ");
+            $statement->execute();
+                $statement = $this->instance->prepare("INSERT INTO todolist ( `text`, `status`) 
+VALUES ('Make a new post about...', 1), ('Proof read the new post.', 0), 
+('Publish new post.', 0), ('Make research for tomorrows post.', 0), 
+('Take the day off.', 1), ('Go to bed.', 1)");
+                $statement->execute();
+        }
+    }
 }
