@@ -39,7 +39,7 @@ class ToDo
     }
 
     /**
-     * Update task, when we check the checkbox our uncheck it
+     * Update task, when we check the checkbox or uncheck it
      *
      * @param $id
      * @param $status
